@@ -1,0 +1,106 @@
+#fullpage{
+    background: url("../images/sky03.jpg") no-repeat center top;
+    background-size: 100%;
+    color: white;
+}
+#fullpage nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #3b3b3b;
+    opacity: 0.5;
+    z-index: 10;
+}
+#fullpage nav img{
+    width: 80px;
+    position: absolute;
+    left: 5%;
+    opacity: 1;
+    margin: auto;
+    z-index: 20;
+}
+#fullpage  nav ul{
+    position: absolute;
+    left: 12%;
+    font-size: 20px;
+    width: 100%;
+}
+#fullpage nav ul li{
+    float: left;
+    list-style: none;
+    margin-right:2.5%;
+}
+
+#fullpage nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#fullpage  nav ul li:hover a{
+    color: #000;
+    margin-top: 5px;
+    text-shadow: 1px 1px #fff;
+    /*transform: scale(1.5,1.5);*/
+}
+@keyframes movet1 {
+    from{
+        right: 0;
+    }
+    to{
+        right: 18%;
+
+    }
+}
+@keyframes movet2 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#fullpage .text p:nth-child(1){
+    position: absolute;
+    top: 22%;
+    font-size:30px;
+    animation: movet1 1.5s ease-in-out forwards;
+}
+#fullpage .text p:nth-child(2){
+    position: absolute;
+    top: 34%;
+    right: 13%;
+    font-size:22px;
+    animation: movet2 4s ease-in-out forwards;
+}
+#fullpage .book{
+    position: absolute;
+    top: 22%;
+    margin-left: 11%;
+}
+#fullpage .book ul{
+    width: 650px;
+}
+@keyframes move {
+    from{
+        padding-top:3px;
+    }
+    to{
+        padding-top: 0;
+    }
+}
+#fullpage .book ul li{
+    float: left;
+    width: 150px;
+    list-style: none;
+    margin-right: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    animation:move 1.5s linear infinite alternate ;
+}
+#fullpage .book ul li img{
+    width: 130px;
+    border: 1px solid gold;
+    box-shadow: gold 1px 1px 2px;
+}

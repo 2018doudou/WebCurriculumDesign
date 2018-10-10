@@ -1,0 +1,152 @@
+#fullpage{
+    background: #2f6873 url("../images/bg-inner.png") no-repeat 95% 70%;
+    /*background-size: 100%;*/
+    color: white;
+}
+#fullpage nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #3b3b3b;
+    opacity: 0.5;
+    z-index: 10;
+}
+#fullpage nav img{
+    width: 80px;
+    position: absolute;
+    left: 5%;
+    opacity: 1;
+    margin: auto;
+    z-index: 20;
+}
+#fullpage  nav ul{
+    position: absolute;
+    left: 12%;
+    font-size: 20px;
+    width: 100%;
+}
+#fullpage nav ul li{
+    float: left;
+    list-style: none;
+    margin-right:2.5%;
+}
+
+#fullpage nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#fullpage  nav ul li:hover a{
+    color: #000;
+    margin-top: 5px;
+    text-shadow: 1px 1px #fff;
+    /*transform: scale(1.5,1.5);*/
+}
+#fullpage .text p:nth-child(1){
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    font-size:35px;
+
+}
+#fullpage .text p:nth-child(2){
+    position: absolute;
+    top: 80%;
+    right: 12%;
+    font-size:22px;
+
+}
+#fullpage .book div{
+    /*margin-right: 3%;*/
+}
+@keyframes move1 {
+     from{
+         position: absolute;
+         top:0;
+     }
+     to{
+         top:36%;
+     }
+ }
+@keyframes move2{
+    from{
+        position: absolute;
+        top:100%;
+    }
+    to{
+        top:22%;
+    }
+}
+#fullpage .book .book1{
+    position: absolute;
+    /*top: 36%;*/
+    left: 6%;
+    animation: move1 1s linear 1  forwards;
+}
+#fullpage .book .book2{
+    position: absolute;
+    /*top: 22%;*/
+    left: 18%;
+    animation: move2 1s linear 1  forwards;
+}
+#fullpage .book .book3{
+    position: absolute;
+    /*top: 36%;*/
+    left: 30%;
+    animation: move1 1s linear 1  forwards;
+}
+#fullpage .book .book4{
+    position: absolute;
+    /*top: 22%;*/
+    left: 42%;
+    animation: move2 1s linear 1  forwards;
+
+}
+#fullpage .book .book5{
+    position: absolute;
+    /*top: 36%;*/
+    left: 54%;
+    animation: move1 1s linear 1  forwards;
+
+}
+#fullpage .book div img{
+    width: 150px;
+    box-shadow: 2px 2px 3px #fae802;
+    /*margin-top: 20px;*/
+}
+#fullpage .book div p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#fullpage .book div.panel,p.flip,
+#fullpage .book div.pane2,p.flip2,
+#fullpage .book div.pane3,p.flip3,
+#fullpage .book div.pane4,p.flip4,
+#fullpage .book div.pane5,p.flip5
+{
+    margin:0px;
+    padding:5px;
+    text-align:center;
+    border:solid 1px #c3c3c3;
+}
+#fullpage .book div.panel,p.flip p,
+#fullpage .book div.pane2,p.flip2 p,
+#fullpage .book div.pane3,p.flip3 p,
+#fullpage .book div.pane4,p.flip4 p,
+#fullpage .book div.pane5,p.flip5 p
+{
+    font-size: 10px;
+    width: 150px;
+}
+#fullpage .book div.panel,
+#fullpage .book div.pane2,
+#fullpage .book div.pane3,
+#fullpage .book div.pane4,
+#fullpage .book div.pane5
+{
+    height:140px;
+    display:none;
+}
+

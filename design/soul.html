@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,uaer-scalable=no">
+    <title>涤荡灵魂</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/soul.css">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="loading">
+    <div class="pic">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</div>
+<div id="fullpage">
+    <nav>
+        <img src="images/logo.png" alt="">
+        <ul><li><a href="index.html">首页</a></li>
+            <li><a href="soul.html">涤荡灵魂</a></li>
+            <li><a href="inner.html">心理哲学</a></li>
+            <li><a href="c-culture.html">中国文学</a></li>
+            <li><a href="f-culture.html">外国文学</a></li>
+            <li><a href="month-text.html">每月足迹</a></li>
+        </ul>
+    </nav>
+    <div class="text">
+        <p class="p1">夜里的烛火</p>
+        <p class="p2">梦中的安魂曲......</p>
+    </div>
+    <div class="book">
+        <ul>
+            <li>
+                <a href="#"><img src="images/soul-book01.jpg" alt="">
+                </a>
+                <p>亲密关系</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/soul-book02.jpg" alt=""></a>
+                <p>高效能人士的七个习惯</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/soul-book03.jpg" alt=""></a>
+                <p>消失的地平线</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/soul-book04.jpg" alt=""></a>
+                <p>自控力</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/soul-book05.jpg" alt=""></a>
+                <p>当呼吸化为空气</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/soul-book06.jpg" alt=""></a>
+                <p>当下的力量</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+
+            css3:true,
+            navigation:true,
+            navigationPosition:'right',
+            navigationTooltips:['page1','page2','page3'],
+            showActiveTooltip:true,
+            slidesNavigation:true,
+            slidesNavPosition:'bottom',
+        });
+    });
+</script>
+</body>
+</html>

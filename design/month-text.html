@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,uaer-scalable=no">
+    <title>每月足迹</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/month.css">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="loading">
+    <div class="pic">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</div>
+<div id="fullpage">
+    <nav>
+        <img src="images/logo.png" alt="">
+        <ul><li><a href="index.html">首页</a></li>
+            <li><a href="soul.html">涤荡灵魂</a></li>
+            <li><a href="inner.html">心理哲学</a></li>
+            <li><a href="c-culture.html">中国文学</a></li>
+            <li><a href="f-culture.html">外国文学</a></li>
+            <li><a href="month-text.html">每月足迹</a></li>
+        </ul>
+    </nav>
+   <div class="content" id="month">
+       <ul class="ul1">
+           <li class="active">
+               <p>1</p>
+               <p>JAN</p>
+           </li>
+           <li>
+               <P>2</P>
+               <p>FER</p>
+           </li>
+           <li>
+               <P>3</P>
+               <p>MAR</p>
+           </li>
+           <li>
+               <p>4</p>
+               <P>APR</P>
+           </li>
+       </ul>
+       <ul class="ul2">
+           <li>
+               <p>5</p>
+               <p>MAY</p>
+           </li>
+           <li>
+               <p>6</p>
+               <p>JUN</p>
+           </li>
+           <li>
+               <p>7</p>
+               <p>JUL</p>
+           </li>
+           <li>
+               <p>8</p>
+               <p>AUG</p>
+           </li>
+       </ul>
+       <ul class="ul3">
+           <li>
+               <p>9</p>
+               <p>SEP</p>
+           </li>
+           <li>
+               <p>10</p>
+               <p>OCT</p>
+           </li>
+           <li>
+               <p>11</p>
+               <p>NOV</p>
+           </li>
+           <li>
+               <p>12</p>
+               <p>DEC</p>
+           </li>
+       </ul>
+       <div class="text">
+       </div>
+   </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+
+            css3:true,
+            navigation:true,
+            navigationPosition:'right',
+            navigationTooltips:['page1','page2','page3'],
+            showActiveTooltip:true,
+            slidesNavigation:true,
+            slidesNavPosition:'bottom',
+        });
+    });
+</script>
+<script>
+    window.onload=function () {
+        var oDiv=document.getElementById('month');
+        var ali=oDiv.getElementsByTagName('li');
+        var oTxt=oDiv.getElementsByTagName('div')[0];
+        var arr=new Array(
+            "《自控力》、《我与地坛》" ,
+            "《我脑袋里的怪东西》、《浮世畸零人》", 
+            "无声告白》、《平凡的世界》" ,
+            "《当呼吸化为空气》、《嫌疑人x的献身》",
+            "《乡土中国》、《白夜行》",
+            "《夜莺书店》、《祈祷落幕时》",
+            "《走出非洲》、《活着》、《人之将死》",
+            "《许三观卖血记》、《多拉.布吕代》",
+            "《What are you》、《人生》",
+            "《一个叫欧维的男人决定去死》、《蛙》",
+            "《我胆小如鼠》、《我们生活在巨大的差异里》",
+            "《幸运之书》"
+        )
+        for(i=0;i<ali.length;i++){
+            ali[i].index=i;
+            ali[i].onmouseover=function () {
+                for(i=0;i<ali.length;i++){
+                    ali[i].className='';
+                }
+                this.className='active';
+            oTxt.innerText=+(this.index+1)+"月阅读:"+arr[this.index];
+            }
+        }
+    }
+    
+</script>
+</body>
+</html>

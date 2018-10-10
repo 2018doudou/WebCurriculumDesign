@@ -1,0 +1,91 @@
+body{
+    background: #d6dbe0;
+}
+#fullpage nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+}
+#fullpage nav img{
+    width: 80px;
+    position: absolute;
+    left: 5%;
+    opacity: 1;
+    margin: auto;
+    z-index: 20;
+}
+
+#fullpage  nav ul{
+    position: absolute;
+    left: 12%;
+    font-size: 20px;
+    width: 100%;
+}
+#fullpage nav ul li{
+    float: left;
+    list-style: none;
+    margin-right:2.5%;
+}
+
+#fullpage nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#fullpage  nav ul li:hover a{
+    color: #000;
+    margin-top: 5px;
+    text-shadow: 1px 1px #fff;
+}
+#fullpage .book{
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+#fullpage .book2{
+    position: absolute;
+    left: 15%;
+    top: 58%;
+}
+#fullpage ul{
+    position: absolute;
+    left: 15%;
+    top: 18%;
+    width: 100%;
+    margin: auto;
+}
+#fullpage ul li{
+    float: left;
+    list-style: none;
+    margin-right: 50px;
+}
+#fullpage ul li img{
+    width: 130px;
+    transition: all,0.5s;
+}
+#fullpage ul:hover li img{
+    background: #000;
+    opacity: 0.6;
+}
+#fullpage ul li img:hover{
+    opacity: 1;
+    border: 2px solid #fae802;
+    transform: scale(1.1,1.1);
+}
+#fullpage ul li p{
+    text-align: center;
+    color: #3b3b3b;
+    font-weight: bold;
+}
+#fullpage .book3{
+    position: absolute;
+    margin-top: -1%;
+}
+#fullpage .book4{
+    position: absolute;
+    margin-top: 18%;
+}

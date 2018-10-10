@@ -1,0 +1,197 @@
+
+body{
+    background-color: #3b3b3b;
+    color: #fff;
+    text-align: center;
+}
+.slide{
+    text-align: center;
+}
+
+#fullpageMenu{
+    position: fixed;
+    top:0;
+    z-index: 999;
+    font-size: 30px;
+    
+}
+#fullpage .section2{
+    background: url("../images/bg7.jpg") no-repeat ;
+    -webkit-background-size:100%;
+    background-size:100%;
+}
+#fullpage .section2 nav{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 80px;
+    width: 100%;
+    background-color: #800001;
+    opacity: 0.5;
+    z-index: 10;
+}
+#fullpage .section2 nav img{
+    width: 80px;
+    position: absolute;
+    left: 5%;
+    opacity: 1;
+    margin: auto;
+    z-index: 20;
+}
+#fullpage .section2 nav ul{
+    position: absolute;
+    left: 12%;
+    font-size: 20px;
+    width: 100%;
+}
+#fullpage .section2 nav ul li{
+    float: left;
+    list-style: none;
+    margin-right:2.5%;
+}
+
+#fullpage .section2 nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#fullpage .section2 nav ul li:hover a{
+    color: #000;
+    margin-top: 5px;
+    text-shadow: 1px 1px #fff;
+}
+#fullpage .section2 h1{
+    margin-top: -5%;
+    font-size: 36px;
+    color: #800001;
+}
+#fullpage .section1{
+    background: url("../images/bg1.jpg") no-repeat center center;
+}
+#fullpage .section1 h2{
+    font-family:"";
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    text-shadow: #56c6ff 2px 1px 1px;
+}
+#fullpage .section1 p{
+    font-size: 14px;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+#fullpage .section1>div:nth-child(2){
+}
+
+#fullpage .section1 ul{
+    width: 200px;
+    height: 200px;
+    /*background-color: gold;*/
+    position: absolute;
+    bottom: 150px;
+    left: 40%;
+    margin-left:-150px;
+    /*perspective: 500px;*/
+    transform-style: preserve-3d;
+
+    animation: sport 16s linear 0s infinite normal;
+}
+
+#fullpage .section1 ul li{
+    list-style: none;
+    /*width: 100%;*/
+    height: 300px;
+    font-size:60px;
+    text-align: center;
+    line-height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+
+}
+#fullpage .section1 ul li:nth-child(1){
+    transform: rotateY(60deg) translateZ(300px);
+}
+#fullpage .section1 ul li:nth-child(2){
+    transform: rotateY(120deg) translateZ(300px);
+}
+#fullpage .section1 ul li:nth-child(3){
+    transform: rotateY(180deg) translateZ(300px);
+}
+#fullpage .section1 ul li:nth-child(4){
+    transform: rotateY(240deg) translateZ(300px);
+}
+#fullpage .section1 ul li:nth-child(5){
+    transform: rotateY(300deg) translateZ(300px);
+}
+#fullpage .section1 ul li:nth-child(6){
+    transform: rotateY(360deg) translateZ(300px);
+}
+#fullpage .section1 ul li img{
+    width: 300px;
+    height: 300px;
+    border: 3px solid skyblue;
+    box-sizing: border-box;
+}
+
+#fullpage .section1 ul:hover{
+    animation-play-state: paused;
+}
+#fullpage .section1 ul:hover li img{
+    opacity: 0.5;
+}
+#fullpage .section1 ul li:hover img{
+    opacity: 1;
+}
+@keyframes sport {
+    from{
+        transform: rotateX(-10deg) rotateY(0deg);
+    }
+    to{
+        transform:rotateX(-10deg) rotateY(360deg);
+    }
+}
+#fullpage .section3{
+    background:url("../images/bookcase3.jpg")no-repeat center bottom;
+    -webkit-background-size:50%;
+    background-size:50%;
+}
+#fullpage .section3 h2{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    text-shadow: #ff6200 2px 1px 1px;
+
+}
+#fullpage .section3 ul{
+    width: 480px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#fullpage .section3 ul li{
+    width: 120px;
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+#fullpage .section3 ul li img{
+    height: 125px;
+}
+#fullpage .section3 .ul1{
+    position: absolute;
+    top: 31%;
+}
+#fullpage .section3 .ul2{
+    position: absolute;
+    top: 56.5%;
+}
+#fullpage .section3 .ul3{
+    position: absolute;
+    top: 78%;
+}
+#fullpage .section3 .ul3 img{
+    height:120px;
+}

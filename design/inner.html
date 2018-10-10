@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,uaer-scalable=no">
+    <title>心理哲学</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/inner.css">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="loading">
+    <div class="pic">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</div>
+<div id="fullpage">
+    <nav>
+        <img src="images/logo.png" alt="">
+        <ul><li><a href="index.html">首页</a></li>
+            <li><a href="soul.html">涤荡灵魂</a></li>
+            <li><a href="inner.html">心理哲学</a></li>
+            <li><a href="c-culture.html">中国文学</a></li>
+            <li><a href="f-culture.html">外国文学</a></li>
+            <li><a href="month-text.html">每月足迹</a></li>
+        </ul>
+    </nav>
+    <div class="text">
+        <p class="p1">Who Are You?</p>
+        <p class="p2">What Do You Want?</p>
+    </div>
+    <div class="book">
+        <div class="book1">
+            <img src="images/inner-book01.jpg" alt="">
+            <p class="flip">少有人走的路</p>
+            <div class="panel">
+             <p>
+                 《少有人走的路》是一本震惊世界的名著，出版后虽未作任何宣传，但经人们口耳相传，迅速畅销起来，它曾在美国最著名的《纽约时报》畅销书排行榜上连续上榜近二十年，创下了出版史上的一大奇迹。
+             </p>
+            </div>
+        </div>
+        <div class="book2">
+            <img src="images/inner-book02.jpg" alt="">
+            <p class="flip2">怪诞心理学</p>
+            <div class="pane2">
+                <p>
+                    本书是作者和诸多卓越心理学家研究成果的结晶。它为读者打开了一扇重新认识自己和他人的窗户，书中的实验让我们意识到：其实人类的行为并不像我们想象的那么难以预测。
+                </p>
+            </div>
+        </div>
+        <div class="book3">
+            <img src="images/inner-book03.jpg" alt="">
+            <p class="flip3">苏菲的世界</p>
+            <div class="pane3">
+                <p>
+                    　　《苏菲的世界》以小说的形式，通过一名哲学导师向一个叫苏菲的女孩传授哲学知识的经过，揭示了西方哲学史发展的历程。前苏格拉底时代到萨特、亚里士多德、笛卡儿、黑格尔等人的思想都跃然纸上.
+                </p>
+            </div>
+        </div>
+        <div class="book4">
+            <img src="images/inner-book04.jpg" alt="">
+            <p class="flip4">24个比利</p>
+            <div class="pane4">
+                <p>
+                    该书讲述了一个真实的故事，威廉·斯坦利·米利根（比利），是美国史上第一位犯下重罪，结果却获判无罪的嫌犯，因为他是一位多重人格分裂者。
+                </p>
+            </div>
+        </div>
+        <div class="book5">
+            <img src="images/inner-book05.jpg" alt="">
+            <p class="flip5">不抱怨的世界</p>
+            <div class="pane5">
+                <p>
+                    《不抱怨的世界》是2009年由陕西师范大学出版社出版的心灵励志图书，作者是威尔 鲍温，译者是陈敬旻。[1]  在美国亚马逊、台湾金石堂、诚品书店心灵励志新书销量第1名。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+
+            css3:true,
+            navigation:true,
+            navigationPosition:'right',
+            navigationTooltips:['page1','page2','page3'],
+            showActiveTooltip:true,
+            slidesNavigation:true,
+            slidesNavPosition:'bottom',
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".flip").click(function(){
+            $(".panel").slideToggle("slow");
+        });
+        $(".flip2").click(function(){
+            $(".pane2").slideToggle("slow");
+        });
+        $(".flip3").click(function(){
+            $(".pane3").slideToggle("slow");
+        });
+        $(".flip4").click(function(){
+            $(".pane4").slideToggle("slow");
+        });
+        $(".flip5").click(function(){
+            $(".pane5").slideToggle("slow");
+        });
+    });
+</script>
+</body>
+</html>

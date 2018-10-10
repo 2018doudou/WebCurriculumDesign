@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,uaer-scalable=no">
+    <title>维维书笈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<audio src="images/bg.mp3" type="audio/mpeg" autoplay></audio>
+<div class="loading">
+    <div class="pic">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+</div>
+<div id="fullpage">
+    <div class="section section2">
+        <nav>
+            <img src="images/logo.png" alt="">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="soul.html">涤荡灵魂</a></li>
+                <li><a href="inner.html">心理哲学</a></li>
+                <li><a href="c-culture.html">中国文学</a></li>
+                <li><a href="f-culture.html">外国文学</a></li>
+                <li><a href="month-text.html">每月足迹</a></li>
+            </ul>
+        </nav>
+        <h1>我的书笈世界......</h1>
+
+    </div>
+    <div class="section section1">
+        <h2>经典好书，百读不厌</h2>
+        <p>去我的读书私库 >></p>
+        <ul>
+            <li><img src="images/book1.jpg" alt=""></li>
+            <li><img src="images/book2.jpg" alt=""></li>
+            <li><img src="images/book3.jpg" alt=""></li>
+            <li><img src="images/book4.jpg" alt=""></li>
+            <li><img src="images/book5.jpg" alt=""></li>
+            <li><img src="images/book6.jpg" alt=""></li>
+        </ul>>
+    </div>
+
+    
+    <div class="section section3">
+        <h2>最近想入的坑</h2>
+        <ul class="ul1">
+            <li><img src="images/book011.jpg" alt=""></li>
+            <li><img src="images/book021.jpg" alt=""></li>
+            <li><img src="images/book03.jpg" alt=""></li>
+        </ul>
+        <ul class="ul2">
+            <li><img src="images/book04.jpg" alt=""></li>
+            <li><img src="images/book05.jpg" alt=""></li>
+            <li><img src="images/book06.jpg" alt=""></li>
+        </ul>
+        <ul class="ul3">
+            <li><img src="images/book09.jpg" alt=""></li>
+            <li><img src="images/book07.jpg" alt=""></li>
+            <li><img src="images/book08.jpg" alt=""></li>
+        </ul>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+
+            css3:true,
+            navigation:true,
+            navigationPosition:'right',
+            navigationTooltips:['page1','page2','page3'],
+            showActiveTooltip:true,
+            slidesNavigation:true,
+            slidesNavPosition:'bottom',
+        });
+    });
+</script>
+</body>
+</html>
